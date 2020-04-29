@@ -1,0 +1,34 @@
+
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #3F729B;">
+  <a class="navbar-brand" style="color: white;" href="#">My Quiz App</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" style="color: white;" href="#">Register <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" style="color: white;" routerLink="/view">View Quizes</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" style="color: white;" href="#">Learning<span class="sr-only">(current)</span></a>
+      </li>
+      
+     </ul>
+    </div>
+</nav>
+
+<!--
+<ul class="nav nav-pills nav-fill navbar-dark bg-dark">
+    <li class="nav-item">
+        <a class="nav-link" href="#">Quiz App</a>
+    </li>
+      <li class="nav-item active">
+        <a class="nav-link" routerLink="/view">View Quiz <span class="sr-only">(current)</span></a>
+      </li>
+     </ul>
+  -->
+    <router-outlet></router-outlet> 

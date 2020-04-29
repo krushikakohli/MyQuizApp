@@ -1,0 +1,32 @@
+<div class="container mt-6">
+<br>
+        <div class="row" >
+            <div class="col-sm">
+                <h1 class="display-4">Q. {{currentQuestionText}} ?</h1>
+                <br>
+                <div *ngFor="let c of choices" class="lead mt-2">
+                    <div class="alert alert-info" >
+                        <input type="radio" (click)="calculate(c.isAnswer)" name="answer">{{c.text}}
+                    </div>
+                </div>                 
+            </div>
+        </div>
+        
+        <div class="row mt-3">
+            <div class="col-sm-4 text-center">
+                <span class="lead " *ngIf="! isFirstQuestion">
+                   <button class="btn btn-info btn-lg " (click)="previousQuestion()">&#x261C; </button>
+                </span>
+            </div>
+            <div class="col-sm-4">
+                <div class="lead text-center">
+                    <button class="btn btn-success btn-lg" (click)="viewResult()">SUBMIT TEST</button>
+                </div>
+            </div>
+            <div class="col-sm-4 text-center">
+                <span class="lead" *ngIf="! isLastQuestion">
+                    <button class="btn btn-info btn-lg" (click)="nextQuestion()"> &#x261E; </button>
+                </span>
+            </div>
+        </div>
+</div>

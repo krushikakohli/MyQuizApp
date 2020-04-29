@@ -1,0 +1,13 @@
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="row justify-content-center">
+            <div class="card text-center border-dark mb-6" style="width: 22rem; margin-bottom: 20px; margin-top: 20px; margin-left: 20px; margin-right: 20px;" *ngFor="let q of quiz">
+                <div class="card-body">
+                    <h5 class="card-title">Quiz Title : {{q.name}}</h5>
+                    <button type="button" class="btn btn-outline-success" (click)="takeQuiz(q)">Start Quiz &#x270D;</button> 
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
